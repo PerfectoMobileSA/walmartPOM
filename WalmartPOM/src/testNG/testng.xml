@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Walmart" parallel="tests">
+	<parameter name="mcm" 			value="demo.perfectomobile.com" />
+	<parameter name="mcmUser" 		value="avnerg@perfectomobile.com" />
+	<parameter name="mcmPassword" 	value="scvuanbsh" /> 
+	<parameter name="testCycle" 	value="1.00" />
+	<parameter name="driverRetries" value="2" />
+  	<test name="Walmart Price Compare Galaxy S5" parallel="classes">
+		<parameter name="platform" value="mobile" />
+		<parameter name="deviceModel" value="Galaxy S5 SM-G900A" />
+		<parameter name="deviceDescription" value="ShirNate|Avner" />
+    	<classes>
+    		<class name="testNG.ItemTest"/>
+    		<class name="testNG.AddressTest"/>
+    	</classes>
+  	</test> 
+  	<test name="Walmart Price Compare iPhone-6" parallel="classes">
+		<parameter name="platform" value="mobile" />
+		<parameter name="deviceModel" value="iPhone-6" />
+		<parameter name="deviceDescription" value="ShirNate|Avner" />
+    	<classes>
+    		<class name="testNG.ItemTest"/>
+    		<class name="testNG.AddressTest"/>
+    	</classes>
+  	</test>
+  	<test name="Walmart Price Compare Chrome" parallel="classes">
+		<parameter name="platform" value="desktop" />
+		<parameter name="deviceModel" value="" />
+		<parameter name="deviceDescription" value="" />
+    	<classes>
+    		<class name="testNG.ItemTest"/>
+    		<class name="testNG.AddressTest"/>
+    	</classes>
+  	</test>
+</suite> <!-- Suite -->
+
