@@ -29,7 +29,7 @@ public class MobileRemoteTest {
 
 	public static void main(String[] args) throws IOException {
 
-		System.out.println("Run started");
+		System.out.println("Run startedd");
 		String browserName = "mobileOS";
 		DesiredCapabilities capabilities = new DesiredCapabilities(browserName, "", Platform.ANY);
 		String host = args[0];
